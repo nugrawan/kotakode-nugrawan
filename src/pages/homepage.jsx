@@ -1,7 +1,7 @@
 import Button from '../components/Button'
 import { Card, CardText, CardTitle } from '../components/Card';
 import { Heading, HeadingExplain, HeadingTitle, Section } from '../components/Heading';
-import {statistic, techs, partners} from '../data/home'
+import { statistic, techs, partners } from '../data/home'
 
 const Home = () => {
   const flexCenter = 'flex items-center'
@@ -10,26 +10,26 @@ const Home = () => {
       <Section className="flex-col mt-36">
         <div className='flex'>
           <Heading>
-              <HeadingTitle>Jadilah Bagian dari Komunitas Tech Terbesar di Indonesia</HeadingTitle>
-              <HeadingExplain>Ikutan diskusi forum tanya jawab, tulis blog dan Membangun portofolio semua di Kotakode</HeadingExplain>
-              <div className={`gap-3 ${flexCenter}`}>
-                  <input className='border px-3 py-3 border-text/70 outline-none focus:border-secondary rounded-sm text-sm' type="email" name="email" placeholder="Masukkan Email Kamu" id="email" />
-                  <Button text="Daftar" className="bg-secondary text-white" />
-              </div>
-              <div className='flex gap-7 mt-14'>
-                {
-                  statistic.map((item, index) => (
-                      <Card align="center" key={index} className='max-w-[8rem] bg-smoothSecondary'>
-                        <CardTitle className="text-3xl text-black">{item.value}</CardTitle>
-                        <CardText className="text-xs">{item.title}</CardText>
-                      </Card>
-                    ))
-                }
-              </div>
-          </Heading>
-            <div>
-                <img className='w-fit' src="https://www.kotakode.com/static/media/globe.75274cb3.gif" alt="Hero" />
+            <HeadingTitle>Jadilah Bagian dari Komunitas Tech Terbesar di Indonesia</HeadingTitle>
+            <HeadingExplain>Ikutan diskusi forum tanya jawab, tulis blog dan Membangun portofolio semua di Kotakode</HeadingExplain>
+            <div className={`gap-3 ${flexCenter}`}>
+              <input className='border px-3 py-3 border-text/70 outline-none focus:border-secondary rounded-sm text-sm' type="email" name="email" placeholder="Masukkan Email Kamu" id="email" />
+              <Button text="Daftar" className="bg-secondary text-white" />
             </div>
+            <div className='flex gap-7 mt-14'>
+              {
+                statistic.map((item, index) => (
+                  <Card align="center" key={index} className='max-w-[8rem] bg-smoothSecondary'>
+                    <CardTitle className="text-[2.1rem] text-black">{item.value}</CardTitle>
+                    <CardText className="text-xs">{item.title}</CardText>
+                  </Card>
+                ))
+              }
+            </div>
+          </Heading>
+          <div>
+            <img className='w-fit' src="https://www.kotakode.com/static/media/globe.75274cb3.gif" alt="Hero" />
+          </div>
         </div>
       </Section>
       <Section>
@@ -56,18 +56,18 @@ const Home = () => {
           </div>
 
           <Card className="bg-white p-6" align="center" >
-              <div className='p-5 w-[80%] mx-auto'>
-                <img src="https://www.kotakode.com/static/media/illustrasi-landing-4-min.b38b89e3.png" alt="image" />
-              </div>
-              <div>
-                <CardTitle>Bangun Online Portofolio</CardTitle>
-                <CardText className="text-sm">Portofolio ibaratkan sebuah aset yang berharga bagi setiap orang. Semakin kamu aktif di dalam forum, semakin membuktikan bahwa kamu adalah programmer yang berkualitas.</CardText>
-              </div>
+            <div className='p-5 w-[80%] mx-auto'>
+              <img src="https://www.kotakode.com/static/media/illustrasi-landing-4-min.b38b89e3.png" alt="image" />
+            </div>
+            <div>
+              <CardTitle>Bangun Online Portofolio</CardTitle>
+              <CardText className="text-sm">Portofolio ibaratkan sebuah aset yang berharga bagi setiap orang. Semakin kamu aktif di dalam forum, semakin membuktikan bahwa kamu adalah programmer yang berkualitas.</CardText>
+            </div>
           </Card>
 
           <Heading className="text-white text-left">
-                <HeadingTitle>Mengapa perlu menggunakan Kotakode?</HeadingTitle>
-                <HeadingExplain className="text-lg w-full bg-right bg-[url('https://www.kotakode.com/static/media/orangeDot.976c60df.svg')] bg-no-repeat">Ibaratkan sebuah kota dengan penduduk para programmer, Kotakode memberikan fasilitas guna mensejahterakan kehidupan penduduknya.</HeadingExplain>
+            <HeadingTitle>Mengapa perlu menggunakan Kotakode?</HeadingTitle>
+            <HeadingExplain className="text-lg w-full bg-right bg-[url('https://www.kotakode.com/static/media/orangeDot.976c60df.svg')] bg-no-repeat">Ibaratkan sebuah kota dengan penduduk para programmer, Kotakode memberikan fasilitas guna mensejahterakan kehidupan penduduknya.</HeadingExplain>
           </Heading>
         </Card>
       </Section>
@@ -116,30 +116,30 @@ const Home = () => {
         </div>
       </Section>
       <Section className="w-full text-center bg-cover flex-col bg-[url('https://www.kotakode.com/static/media/telegramBG.26676839.svg')]">
-            <div className='mx-auto p-10 mt-20 text-center'>
-              <img className='w-[70%] mx-auto' src="https://www.kotakode.com/static/media/telegram.f8b93910.svg" alt="telegram" />
-            </div>
-            <Heading className="text-center gap-5 mx-auto w-full">
-                <HeadingTitle className="text-3xl">Gabung Komunitas Telegram Kotakode</HeadingTitle>
-                <HeadingExplain className="mx-auto text-lg w-full">Kotakode berkolaborasi dengan berbagai pioneer yang inovatif untuk bersama mencapai tujuan yang besar</HeadingExplain>
-                <Button text="Ikutan Telegram" className="bg-secondary mx-auto px-7 w-fit py-3 font-bold text-white" />
-            </Heading>
+        <div className='mx-auto p-10 mt-20 text-center'>
+          <img className='w-[70%] mx-auto' src="https://www.kotakode.com/static/media/telegram.f8b93910.svg" alt="telegram" />
+        </div>
+        <Heading className="text-center gap-5 mx-auto w-full">
+          <HeadingTitle className="text-[2rem]">Gabung Komunitas Telegram Kotakode</HeadingTitle>
+          <HeadingExplain className="mx-auto text-lg w-full">Kotakode berkolaborasi dengan berbagai pioneer yang inovatif untuk bersama mencapai tujuan yang besar</HeadingExplain>
+          <Button text="Ikutan Telegram" className="bg-secondary mx-auto px-7 w-fit py-3 font-bold text-white" />
+        </Heading>
       </Section>
       <Section>
         <Heading className="w-full" align="center">
           <HeadingTitle className="w-[60%] mx-auto">Dapatkan Bantuan dari Ribuan Ahli dan Professional Programmer di Seluruh Indonesia</HeadingTitle>
           <HeadingExplain className="mx-auto my-5 text-xl w-full">Dari Berbagai Bahasa Pemrograman, Framework, Tools Coding, dan Contoh Pengembangan Proyek</HeadingExplain>
           <div className={`${flexCenter} justify-center flex-wrap margin-auto gap-3 px-10`}>
-                {
-                  techs.map((item, index) => (
-                    <div className='mt-3'>
-                      <Card className={`bg-white ${flexCenter} gap-2 rounded-md border-2 justify-center border-primary `} key={index}>
-                        <img className='h-16 w-16' src={item.image} alt="tech" />
-                      </Card>
-                      <p className='text-center my-3'>{item.name}</p>
-                    </div>
-                  ))
-                }
+            {
+              techs.map((item, index) => (
+                <div key={index} className='mt-3'>
+                  <Card className={`bg-white ${flexCenter} gap-2 rounded-md border-2 justify-center border-primary `} key={index}>
+                    <img className='h-16 w-16' src={item.image} alt="tech" />
+                  </Card>
+                  <p className='text-center my-3'>{item.name}</p>
+                </div>
+              ))
+            }
           </div>
           <Button text="Ajukan Pertanyaan" className="bg-secondary mx-auto px-7 w-fit py-3 font-bold text-white" />
         </Heading>
@@ -148,13 +148,13 @@ const Home = () => {
         <Heading align="center" className="w-full">
           <HeadingTitle>Diliput Oleh</HeadingTitle>
           <div className='flex mt-10 justify-around gap-10 items-center'>
-              {
-                partners.map((partner, index) => (
-                  <div className='max-w-32'>
-                    <img src={partner} alt="partner" />
-                  </div>
-                ))
-              }
+            {
+              partners.map((partner, index) => (
+                <div key={index} className='max-w-32'>
+                  <img src={partner} alt="partner" />
+                </div>
+              ))
+            }
           </div>
         </Heading>
       </Section>

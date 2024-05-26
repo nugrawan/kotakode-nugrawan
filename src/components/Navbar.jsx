@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Button from './Button';
@@ -9,8 +8,12 @@ const navigation = [
     to: '/about'
   },
   {
+    name: 'Film',
+    to: '/movies'
+  },
+  {
     name: 'Produk',
-    to: '/product'
+    to: '/products'
   },
   {
     name: 'FAQ',
@@ -30,18 +33,18 @@ const Navbar = () => {
   return (
     <nav className='fixed bg-white top-0 w-full h-[65px] gap-10 py-5 px-20 border-b-[3px] border-secondary flex justify-between items-center'>
       <div className='px-2 flex items-center w-full gap-10'>
-          <div className='flex gap-2'>
-            <Link to="/"><Logo /></Link>
-          </div>
-          <ul className='flex ml-10 justify-around font-bold text-[1rem] text-text/80'>
-            {
-              navigation.map((item, index) => {
-                return (
-                  <li key={index} className='px-4 rounded-md py-2 border-white border hover:border-primary'><Link to={item.to}>{item.name}</Link></li>
-                )
-              })
-            }            
-          </ul>
+        <div className='flex gap-2'>
+          <Link to="/"><Logo /></Link>
+        </div>
+        <ul className='flex ml-10 justify-around font-bold text-[1rem] text-text/80'>
+          {
+            navigation.map((item, index) => {
+              return (
+                <Link key={index} to={item.to}><li className='px-4 rounded-md py-2 border-white border hover:border-primary'>{item.name}</li></Link>
+              )
+            })
+          }
+        </ul>
       </div>
 
       <div className='flex gap-5'>
