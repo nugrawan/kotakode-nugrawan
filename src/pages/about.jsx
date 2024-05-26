@@ -11,7 +11,7 @@ const About = () => {
           <HeadingTitle className="text-white text-[2.5rem]">Dukung kami dalam menciptakan ekosistem yang inklusif bagi programmer di seluruh Indonesia</HeadingTitle>
         </Heading>
         <Card align="center" className="w-[65%] py-10 px-10 rounded-md -mt-10 full-shadow mx-auto bg-white">
-          <CardTitle className="text-[2.1rem] font-semibold p-3">Tentang Kotakode</CardTitle>
+          <CardTitle size="text-3xl" className="font-semibold p-3">Tentang Kotakode</CardTitle>
           <CardText>Kotakode merupakan platform komunitas bagi para pegiat IT di Indonesia dimana programmer dapat belajar dan berbagi wawasan seputar dunia IT terkini untuk mendukung memberikan pertumbuhan perekonomian di Indonesia.</CardText>
         </Card>
       </Section>
@@ -27,7 +27,7 @@ const About = () => {
                   </div>
                   <div className="text-left justify-center flex flex-col">
                     <HeadingTitle className="text-[2.5rem]">{item.name}</HeadingTitle>
-                    <h3 className="w-full text-secondary text-xl my-2 font-medium">{item.position}</h3>
+                    <h3 className="w-full text-secondary text-2xl my-2 font-medium">{item.position}</h3>
                     <h4 className="w-full text-[#757575] text-lg font-bold">{item.degree}</h4>
                     <ul className="list-disc p-5">
                       {
@@ -66,11 +66,11 @@ const About = () => {
           <div className="m-auto mt-2 flex flex-col items-center text-left">
             <HeadingExplain>Kotakode merupakan platform yang dibuat untuk mengatasi permasalahan bagi para pegiat IT di Indonesia. Kami menyadari bahwa kami sangat membutuhkan kontribusi pengguna dalam membangun Kotakode. Agar setiap fitur, tombol, dan warna yang kami buat sesuai dengan kebutuhan pengguna. Oleh karena itu jika kamu memiliki pertanyaan, saran, atau tawaran kerjasama yang ingin ditanyakan dan diskusikan dengan kami. Silakan hubungi kami melalui:</HeadingExplain>
             <div className="w-[60%] text-left my-5">
-              <HeadingTitle className='text-2xl font-medium mb-2'>Kotakode:</HeadingTitle>
+              <HeadingTitle size="text-2xl" className='font-medium mb-2'>Kotakode:</HeadingTitle>
               <HeadingExplain className='w-full'>Ariobimo Sentral level 8. Jalan H. R. Rasuna Said Kav X-2 No. 5, Kuningan Timur, Setiabudi, Jakarta Selatan 12950</HeadingExplain>
             </div>
             <div className="w-[60%] text-left my-5">
-              <HeadingTitle className='text-2xl font-medium mb-2'>Email:</HeadingTitle>
+              <HeadingTitle size="text-2xl" className='font-medium mb-2'>Email:</HeadingTitle>
               <a className='w-full text-lg text-primary' href="mailto:petertanugraha@kotakode.com">petertanugraha@kotakode.com</a>
             </div>
           </div>

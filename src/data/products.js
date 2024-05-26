@@ -10,3 +10,9 @@ export const options = [
     'Mingguan',
     'Bulanan',
 ]
+
+export const forums = [
+    'Baru',
+    'Aktif',
+    'Belum Dijawab',
+]

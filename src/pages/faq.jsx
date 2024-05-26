@@ -24,8 +24,8 @@ const Faq = () => {
                     <HeadingTitle className="text-[2.5rem]">Pertanyaan & Jawaban terkait Kotakode</HeadingTitle>
                     <HeadingExplain className="text-2xl w-full mx-auto">Punya pertanyaan seputar produk dan layanan Kotakode? Temukan berbagai informasi yang tersedia di bawah ini.</HeadingExplain>
                 </Heading>
-                <Card align="center" className="rounded-lg p-1 -mt-5 mx-auto bg-white">
-                    <CardTitle className="px-12 py-1 mb-0 text-gray-500 font-extrabold">FAQ</CardTitle>
+                <Card align="center" padding='px-12 py-2' className="rounded-lg -mt-5 mx-auto bg-white">
+                    <CardTitle size='text-2xl' className="mb-[0px] text-gray-500 font-extrabold">FAQ</CardTitle>
                 </Card>
             </Section>
             <Section>

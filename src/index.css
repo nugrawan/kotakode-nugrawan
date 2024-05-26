@@ -12,3 +12,7 @@
 .forum-right a {
     @apply text-primary cursor-pointer hover:underline
 }
+
+.hover-shadow:hover {
+    @apply full-shadow
+}

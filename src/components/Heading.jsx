@@ -10,9 +10,9 @@ export const Heading = ({ children, className, align }) => {
     )
 }
 
-export const HeadingTitle = ({ children, className }) => {
+export const HeadingTitle = ({ children, className, size = 'text-5xl' }) => {
     return (
-        <h1 className={`leading-tight text-5xl font-bold ${className}`}>{children}</h1>
+        <h1 className={`leading-tight font-bold ${className} ${size}`}>{children}</h1>
     )
 }
 

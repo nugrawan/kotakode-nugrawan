@@ -1,6 +1,6 @@
-const Card = ({ children, className, align }) => {
+const Card = ({ children, className, align, padding = 'p-4' }) => {
   return (
-    <div className={`text-text shadow-xl rounded-3xl p-4 ${className} ${align === 'center' ? 'text-center' : 'text-left'}`}>
+    <div className={`text-text shadow-xl rounded-3xl ${className} ${padding} ${align === 'center' ? 'text-center' : 'text-left'}`}>
       {children}
     </div>
   );
@@ -8,7 +8,7 @@ const Card = ({ children, className, align }) => {
 
 const CardTitle = ({ children, className, size = 'text-xl' }) => {
   return (
-    <h3 className={`font-bold mb-3 ${className + size} `}>
+    <h3 className={`font-bold mb-3 ${className} ${size}`}>
       {children}
     </h3>
   );
