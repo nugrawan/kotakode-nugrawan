@@ -7,10 +7,12 @@ import ErrorPage from "./pages/error";
 import Movies from "./pages/movies";
 import Faq from "./pages/faq";
 import Product from "./pages/product";
+import { ProductProvider } from "./context/ProductContext";
+
 
 function App() {
   return (
-    <>
+    <ProductProvider>
       <header className="font-quicksand">
         <Navbar />
       </header>
@@ -27,7 +29,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </ProductProvider>
   )
 }
 

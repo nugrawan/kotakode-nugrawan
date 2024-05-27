@@ -14,6 +14,26 @@ const Faq = () => {
             question: 'Bagaimana cara membuat pertanyaan di Kotakode?',
             answer: 'Kamu dapat membagikan portofolio di dalam Kotakode dengan cara mengisi formulir pendaftaran portofolio yang telah disediakan oleh admin. Pastikan kalian telah mengisi informasi yang diperlukan, serta portofolio yang akan dibagikan harus sesuai dengan tema yang diinginkan oleh admin.'
         },
+        {
+            question: 'Bagaimana cara agar pertanyaan cepat terjawab?',
+            answer: 'Kamu dapat membagikan portofolio di dalam Kotakode dengan cara mengisi formulir pendaftaran portofolio yang telah disediakan oleh admin. Pastikan kalian telah mengisi informasi yang diperlukan, serta portofolio yang akan dibagikan harus sesuai dengan tema yang diinginkan oleh admin.'
+        },
+        {
+            question: 'Bagaimana cara menjawab pertanyaan di Kotakode?',
+            answer: 'Kamu dapat membagikan portofolio di dalam Kotakode dengan cara mengisi formulir pendaftaran portofolio yang telah disediakan oleh admin. Pastikan kalian telah mengisi informasi yang diperlukan, serta portofolio yang akan dibagikan harus sesuai dengan tema yang diinginkan oleh admin.'
+        },
+        {
+            question: 'Mengapa saya tidak bisa menghapus pertanyaan/jawaban di Kotakode?',
+            answer: 'Kamu dapat membagikan portofolio di dalam Kotakode dengan cara mengisi formulir pendaftaran portofolio yang telah disediakan oleh admin. Pastikan kalian telah mengisi informasi yang diperlukan, serta portofolio yang akan dibagikan harus sesuai dengan tema yang diinginkan oleh admin.'
+        },
+        {
+            question: 'Apa yang dimaksud dengan Poin Kredibilitas?',
+            answer: 'Kamu dapat membagikan portofolio di dalam Kotakode dengan cara mengisi formulir pendaftaran portofolio yang telah disediakan oleh admin. Pastikan kalian telah mengisi informasi yang diperlukan, serta portofolio yang akan dibagikan harus sesuai dengan tema yang diinginkan oleh admin.'
+        },
+        {
+            question: 'Apa yang dimaksud dengan Tag?',
+            answer: 'Kamu dapat membagikan portofolio di dalam Kotakode dengan cara mengisi formulir pendaftaran portofolio yang telah disediakan oleh admin. Pastikan kalian telah mengisi informasi yang diperlukan, serta portofolio yang akan dibagikan harus sesuai dengan tema yang diinginkan oleh admin.'
+        },
     ]
 
     return (
@@ -30,7 +50,7 @@ const Faq = () => {
             </Section>
             <Section>
                 <Heading align='center' className="w-full ">
-                    <div className="flex mx-auto flex-col text-left gap-5">
+                    <div className="flex w-[60%] mx-auto flex-col text-left gap-5">
                         {faq.map((item, index) => (
                             <div key={index} className='border-b py-3 border-black w-[80%] mx-auto flex justify-between gap-5'>
                                 <h3 className="text-2xl font-bold">{item.question}</h3>

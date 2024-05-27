@@ -9,7 +9,7 @@ const social = [
 
 const Footer = () => {
     return (
-        <div className="bg-[#1f2329] border-t-2 border-white px-20 text-[#b2b9bf] p-5 pt-16 font-quicksand font-bold">
+        <div className="bg-[#1f2329] w-full border-t-2 border-white px-20 text-[#b2b9bf] p-5 pt-16 font-quicksand font-bold">
             <div className="container mb-5 mx-auto flex justify-around">
                 <section className="flex flex-col gap-5">
                     <h3>BAGIAN DARI:</h3>

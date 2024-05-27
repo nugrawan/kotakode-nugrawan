@@ -1,8 +1,9 @@
-const Button = ({ text, className, icon }) => {
+const Button = ({ text, className, icon, onClick, size = 'font-semibold' }) => {
   return (
     <button
+      onClick={onClick}
       className={
-        `inline-flex font-semibold items-center border rounded-md ring-0 outline-none px-9 py-2 justify-center hover:opacity-60 ${className}`
+        `inline-flex items-center border rounded-md ring-0 outline-none px-9 py-2 justify-center hover:opacity-60 ${className} ${size}`
       }
     >
       {icon}

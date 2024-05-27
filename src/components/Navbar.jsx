@@ -31,7 +31,7 @@ const navigation = [
 
 const Navbar = () => {
   return (
-    <nav className='fixed bg-white top-0 w-full h-[65px] gap-10 py-5 px-20 border-b-[3px] border-secondary flex justify-between items-center'>
+    <nav className='fixed z-50 bg-white top-0 w-full h-[65px] gap-10 py-5 px-20 border-b-[3px] border-secondary flex justify-between items-center'>
       <div className='px-2 flex items-center w-full gap-10'>
         <div className='flex gap-2'>
           <Link to="/"><Logo /></Link>
