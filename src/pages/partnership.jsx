@@ -11,7 +11,7 @@ export default function Partnership() {
                 <div className="max-w-fit">
                     <img width={600} height={500} src="https://www.kotakode.com/static/media/partnershipIlustration.45457fb3.svg" alt="mascot" />
                 </div>
-                <Heading className='ml-10 gap-0 max-w-[40%]'>
+                <Heading className='max-w-[40%] ml-10 gap-0'>
                     <HeadingTitle size="text-lg">Kotakode Partnership</HeadingTitle>
                     <HeadingTitle size="text-[2.6rem]" className='font-bold text-black'>Bersama Membangun Talenta Digital di Indonesia</HeadingTitle>
                     <HeadingTitle size="text-lg" className='my-3'>Kotakode membuka peluang kolaborasi dengan berbagai institusi untuk mendukung ekosistem digital di Indonesia</HeadingTitle>
