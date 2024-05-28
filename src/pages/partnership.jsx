@@ -11,7 +11,7 @@ export default function Partnership() {
                 <div className="max-w-fit">
                     <img width={600} height={500} src="https://www.kotakode.com/static/media/partnershipIlustration.45457fb3.svg" alt="mascot" />
                 </div>
-                <Heading className='w-[40%] ml-10 gap-0'>
+                <Heading className='ml-10 gap-0 max-w-[40%]'>
                     <HeadingTitle size="text-lg">Kotakode Partnership</HeadingTitle>
                     <HeadingTitle size="text-[2.6rem]" className='font-bold text-black'>Bersama Membangun Talenta Digital di Indonesia</HeadingTitle>
                     <HeadingTitle size="text-lg" className='my-3'>Kotakode membuka peluang kolaborasi dengan berbagai institusi untuk mendukung ekosistem digital di Indonesia</HeadingTitle>
@@ -27,12 +27,12 @@ export default function Partnership() {
                 </Heading>
                 <Heading align='center' className='mx-auto'>
                     <div className="flex gap-5">
-                        <Card className='shadow-none flex-1 p-3'>
+                        <Card withShadow={false} className='flex-1 p-3'>
                             <img className="p-16 mx-auto" src="https://www.kotakode.com/static/media/socialMedia.5d209265.svg" alt="social" />
                             <CardTitle size="text-lg">Jangkau Ribuan Programmer Di Indonesia</CardTitle>
                             <CardText className='leading-8 mt-5'>Kotakode adalah tempat tujuan programmer Indonesia. Dengan bekerjasama dengan Kotakode, Anda dapat menjangkau puluhan ribu programmer Indonesia untuk meningkatkan acara Anda berikutnya.</CardText>
                         </Card>
-                        <Card className='shadow-none flex-1 p-3'>
+                        <Card withShadow={false} className='flex-1 p-3'>
                             <img className="p-16 mx-auto" src="https://www.kotakode.com/static/media/expand.6b14540d.svg" alt="credibility" />
                             <CardTitle size="text-lg">Tingkatkan Kredibilitas Brand Anda</CardTitle>
                             <CardText className='leading-8 mt-5'>Kotakode adalah salah satu pemimpin di bidang teknologi Indonesia. Ketika Anda menjadi partner kami, brand Anda akan secara otomatis dipercayai oleh komunitas tech di Indonesia.</CardText>
@@ -44,13 +44,13 @@ export default function Partnership() {
                 <Heading align='center' className={'mx-auto'}>
                     <HeadingTitle>Tipe Partnership</HeadingTitle>
                     <div className="flex gap-8 w-[70%] p-10 mx-auto">
-                        <Card align='center' className='border-secondary border gap-5 border-t-8 rounded-sm shadow-none'>
+                        <Card align='center' className='border-secondary border gap-5 border-t-8 rounded-sm' withShadow={false}>
                             <img className="p-5 mx-auto" src="https://www.kotakode.com/static/media/chatGroup.08dcde4d.svg" alt="community" />
                             <CardTitle>Community Partner</CardTitle>
                             <CardText className='p-3 leading-5'>Kotakode berkolaborasi dengan Bootcamp IT, KOMINFO, serta Institusi Pendidikan untuk memfasilitasi murid dalam proses belajar pemrograman.</CardText>
                             <Button size="font-semibold" className='text-primary text-[1.1rem] m-3 px-[.5rem] hover:opacity-100 border-white hover:border-primary hover:border' text="Gabung Sekarang" />
                         </Card>
-                        <Card align='center' className='border-secondary border gap-5 border-t-8 rounded-sm shadow-none'>
+                        <Card align='center' className='border-secondary border gap-5 border-t-8 rounded-sm' withShadow={false}>
                             <img className="p-5 mx-auto" src="https://www.kotakode.com/static/media/media.f625365d.svg" alt="community" />
                             <CardTitle>Media Partner</CardTitle>
                             <CardText className='p-3 leading-5'>Kotakode membuka peluang kolaborasi untuk mengadakan webinar, lomba, maupun promosi melalui marketing channel Kotakode.</CardText>
@@ -75,14 +75,14 @@ export default function Partnership() {
                         {
                             users.map((user, index) => (
                                 <div key={index} onClick={() => setFocus(index)}>
-                                    <Card className={`rounded-none h-full flex flex-col justify-between cursor-pointer py-10 px-5 ${focus === index ? 'text-white bg-primary' : ''} shadow-none`}>
+                                    <Card className={`rounded-none h-full flex flex-col justify-between cursor-pointer py-10 px-5 ${focus === index ? 'text-white bg-primary' : ''}`} withShadow={false}>
                                         <div>
                                             <img src={focus === index ? `https://www.kotakode.com/static/media/quote.db4d669f.svg` : 'https://www.kotakode.com/static/media/greenQuote.1d424d67.svg'} alt="koma" />
                                             <CardText className='py-10'>{user.comments}</CardText>
                                         </div>
                                         <div>
                                             <CardTitle size="text-md" className='mb-0' >{user.name}</CardTitle>
-                                            <CardText className='font-thin'>{user.position}</CardText>
+                                            <CardText className='font-normal'>{user.position}</CardText>
                                         </div>
                                     </Card>
                                 </div>

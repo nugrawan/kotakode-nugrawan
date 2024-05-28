@@ -29,7 +29,7 @@ export default function Events() {
                     <div className="grid grid-cols-3 gap-10 w-[70%] mx-auto">
                         {
                             [1, 2, 3, 4, 5, 6].map((item, index) => (
-                                <Card key={index} className='hover:underline cursor-pointer shadow-none hover:shadow-2xl'>
+                                <Card withShadow={false} key={index} className='hover:underline cursor-pointer hover:shadow-2xl'>
                                     <img src="https://storage.googleapis.com/kotakode-prod-public/images/d662f300-8fc2-4bfa-8138-2635ea5ddeb5-kotatalks.jpeg" alt="event" />
                                     <div className="flex gap-5 mt-3">
                                         <p className="text-xl opacity-80 w-[15%] border-black border-y py-2 h-fit font-semibold ">Jan 30</p>
