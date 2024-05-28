@@ -33,10 +33,10 @@ export function BlogAside() {
         <>
             <Card className='shadow-md mt-72 p-3 rounded-md'>
                 <CardTitle size="text-md" className='flex items-center font-semibold gap-1 pb-5 border-b'><p className='w-5 h-5 text-primary font-bold text-xl' alt="pin">#</p>Tag Populer</CardTitle>
-                <div className='text-md'>
+                <div className='text-md text-sm font-medium p-2 text-black'>
                     {
                         tags.map((item, index) => (
-                            <p key={index}>{item}</p>
+                            <p className="px-3 py-2" key={index}>#{item}</p>
                         ))
                     }
                 </div>

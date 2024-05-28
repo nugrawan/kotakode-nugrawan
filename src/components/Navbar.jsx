@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Button from './Button';
+import { useState } from 'react';
 
 const navigation = [
   {
@@ -30,6 +31,8 @@ const navigation = [
 ]
 
 const Navbar = () => {
+  const [activeNav, setActiveNav] = useState(0);
+
   return (
     <nav className='fixed z-50 bg-white top-0 w-full h-[65px] gap-10 py-5 px-20 border-b-[3px] border-secondary flex justify-between items-center'>
       <div className='px-2 flex items-center w-full gap-10'>
@@ -40,7 +43,7 @@ const Navbar = () => {
           {
             navigation.map((item, index) => {
               return (
-                <Link key={index} to={item.to}><li className='px-4 rounded-md py-2 border-white border hover:border-primary'>{item.name}</li></Link>
+                <Link onClick={() => setActiveNav(index + 1)} key={index} to={item.to}><li className={`px-4 rounded-md py-2 border-white active:bg-primary active:text-white border hover:border-primary ${activeNav === index + 1 ? 'text-primary' : ''}`}>{item.name}</li></Link>
               )
             })
           }

@@ -14,11 +14,11 @@ export default function DashboardContent() {
 
     return (
         <>
-            <Heading className='w-[48rem] pr-10'>
+            <Heading className='w-[760px] pr-10'>
                 <ProductHeading withButton={false} title='Leaderboard' summary='Halaman untuk mencari user di Kotakode dan melihat ranking kredibilitas.' />
                 <SearchButton placeholder='Ketik disini untuk mencari user...' text='Telusuri' />
                 <div className='my-5'>
-                    <LeaderboardList forums={leaderboard} />
+                    <LeaderboardList leaderboard={leaderboard} />
                     <div className='mt-28'>
                         <LeaderboardHead />
                         <>

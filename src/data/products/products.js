@@ -17,6 +17,14 @@ export const forums = [
     'Belum Dijawab',
 ]
 
+export const blogs = [
+    'Populer',
+    'Terbaru',
+    'Mingguan',
+    'Bulanan',
+    'Tahunan',
+]
+
 export const leaderboard = [
     'Peringkat',
     'Terbaik Minggu Ini',

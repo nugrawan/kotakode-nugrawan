@@ -8,6 +8,8 @@ import Movies from "./pages/movies";
 import Faq from "./pages/faq";
 import Product from "./pages/product";
 import { ProductProvider } from "./context/ProductContext";
+import Events from "./pages/events";
+import Partnership from "./pages/partnership";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route path="/products" element={<Product />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/partnership" element={<Partnership />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>

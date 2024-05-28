@@ -35,15 +35,31 @@ export function ForumList({ forums }) {
     )
 }
 
-export function LeaderboardList({ forums }) {
+export function LeaderboardList({ leaderboard }) {
     const { activeLeaderboardIndex, setActiveLeaderboardIndex } = useContext(ProductContext)
 
     return (
         <div className='flex text-center gap-3 font-medium border-b'>
             {
-                forums.map((item, index) => (
+                leaderboard.map((item, index) => (
                     <div key={index}>
                         <Button size="font-medium" onClick={() => setActiveLeaderboardIndex(index)} className={`hover:opacity-[1] rounded-b-none hover:bg-primary/20 px-[1.2rem] py-1 border-b-[3px] hover:border-b-primary hover:font-bold border-white ${activeLeaderboardIndex === index ? 'border-b-primary font-[800]' : ''} `} text={item} />
+                    </div>
+                ))
+            }
+        </div>
+    )
+}
+
+export function BlogList({ blogs }) {
+    const { activeBlogIndex, setActiveBlogIndex } = useContext(ProductContext)
+
+    return (
+        <div className='flex text-center gap-3 font-medium border-b'>
+            {
+                blogs.map((item, index) => (
+                    <div key={index}>
+                        <Button size="font-medium" onClick={() => setActiveBlogIndex(index)} className={`hover:opacity-[1] rounded-b-none hover:bg-primary/20 px-[1.2rem] py-1 border-b-[3px] hover:border-b-primary hover:font-bold border-white ${activeBlogIndex === index ? 'border-b-primary font-[800]' : ''} `} text={item} />
                     </div>
                 ))
             }
